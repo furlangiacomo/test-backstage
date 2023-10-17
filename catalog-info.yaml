@@ -1,0 +1,32 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: test-backstage
+  description: test repo
+  annotations:
+    github.com/project-slug: furlangiacomo/test-backstage
+    backstage.io/techdocs-ref: dir:.
+  tags:
+    - nestjs 
+  links:
+    - url: https://sanji.dev
+      title: Production host
+spec:
+  type: service
+  lifecycle: production
+  owner: devops
+  providesApis:
+    - test-backstage-api
+---
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: test-backstage-api
+  title: test-backstage
+  description: test repo
+spec:
+  type: openapi
+  lifecycle: production
+  owner: voyager
+  definition:
+    $text: https://raw.githubusercontent.com/micc83/test-repository/main/schema.yml
