@@ -5,7 +5,7 @@ metadata:
   description: test repo
   annotations:
     github.com/project-slug: furlangiacomo/test-backstage
-    backstage.io/techdocs-ref: dir:.
+    backstage.io/techdocs-entity: component:default/test-backstage
   tags:
     - nestjs 
   links:
