@@ -29,4 +29,4 @@ spec:
   lifecycle: production
   owner: voyager
   definition:
-    $text: https://raw.githubusercontent.com/micc83/test-repository/main/schema.yml
+    $text: https://storage.cloud.google.com/weroad-eu-backstage-staging/schema.yml
