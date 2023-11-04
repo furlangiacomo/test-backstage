@@ -1,16 +1,12 @@
 ---
+---
 apiVersion: backstage.io/v1alpha1
-kind: Component
+kind: User
 metadata:
-  name: backstage
-  annotations:
-    github.com/project-slug: weroad/backstage
-    backstage.io/techdocs-ref: dir:.
-    backstage.io/kubernetes-label-selector: app.kubernetes.io/name=backstage
-  links:
-    - url: https://staging-backstage.weroad.io/
-      title: Backstage staging
+  name: giacomo.furlan
 spec:
-  type: service
-  lifecycle: production
-  owner: devops
+  profile:
+    displayName: Giacomo Furlan
+    email: giacomo.furlan@weroad.it
+  memberOf: 
+    - devops
