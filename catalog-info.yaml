@@ -1,4 +1,19 @@
 ---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: backstage
+  annotations:
+    github.com/project-slug: weroad/backstage
+    backstage.io/techdocs-ref: dir:.
+    backstage.io/kubernetes-label-selector: app.kubernetes.io/name=backstage
+  links:
+    - url: https://staging-backstage.weroad.io/
+      title: Backstage staging
+spec:
+  type: service
+  lifecycle: production
+  owner: devops
 ---
 apiVersion: backstage.io/v1alpha1
 kind: User
