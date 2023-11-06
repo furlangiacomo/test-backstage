@@ -14,14 +14,3 @@ spec:
   type: service
   lifecycle: production
   owner: devops
----
-apiVersion: backstage.io/v1alpha1
-kind: User
-metadata:
-  name: giacomo.furlan
-spec:
-  profile:
-    displayName: Giacomo Furlan
-    email: giacomo.furlan@weroad.it
-  memberOf: 
-    - devops
