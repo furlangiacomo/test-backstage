@@ -6,7 +6,7 @@ metadata:
   annotations:
     github.com/project-slug: weroad/backstage
     backstage.io/techdocs-ref: dir:.
-    backstage.io/kubernetes-label-selector: app.kubernetes.io/name=backstage
+    backstage.io/kubernetes-label-selector: app.kubernetes.io/name=backstages
   links:
     - url: https://staging-backstage.weroad.io/
       title: Backstage staging
