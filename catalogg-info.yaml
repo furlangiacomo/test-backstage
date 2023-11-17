@@ -2,13 +2,29 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: backstage
+  name: weroad
   annotations:
-    github.com/project-slug: weroad/backstage
+    github.com/project-slug: weroad/weroad
     backstage.io/techdocs-ref: dir:.
     backstage.io/kubernetes-label-selector: app.kubernetes.io/part-of=weroad
   links:
-    - url: https://staging-backstage.weroad.io/
+    - url: https://weroad.it
+      title: Backstage staging
+spec:
+  type: service
+  lifecycle: production
+  owner: devops
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: api-catalog
+  annotations:
+    github.com/project-slug: weroad/api-catalog
+    backstage.io/techdocs-ref: dir:.
+    backstage.io/kubernetes-label-selector: app.kubernetes.io/part-of=api-catalog
+  links:
+    - url: https://api-catalog.it
       title: Backstage staging
 spec:
   type: service
